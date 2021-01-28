@@ -37,9 +37,9 @@ class ViewController: UIViewController {
         presenter.viewStateListener = {
             title.text = $0.title
             subtitle.text = $0.subtitle
-            return KotlinUnit()
+            // return KotlinUnit()
         }
-        
+
         button.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
     }
     
